@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grasp_anything"
+version = "0.1.0"
+description = "A package for robot grasping"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "matplotlib",
+    "scikit-image",
+    "imageio",
+    "torch",
+    "torchvision",
+    "torchsummary",
+    "tensorboardX",
+    "pyrealsense2",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+develop = [
+
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+grasp_anything = ["py.typed"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
