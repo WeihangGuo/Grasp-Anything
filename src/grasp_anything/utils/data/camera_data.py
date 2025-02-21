@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-from utils.dataset_processing import image
+from grasp_anything.utils.dataset_processing import image
 
 
 class CameraData:

@@ -7,10 +7,10 @@ import torch
 
 from hardware.camera import RealSenseCamera
 from hardware.device import get_device
-from .post_process import post_process_output
-from ..utils.data.camera_data import CameraData
-from ..utils.dataset_processing.grasp import detect_grasps
-from ..utils.visualisation.plot import plot_grasp
+from grasp_anything.inference.post_process import post_process_output
+from grasp_anything.utils.data.camera_data import CameraData
+from grasp_anything.utils.dataset_processing.grasp import detect_grasps
+from grasp_anything.utils.visualisation.plot import plot_grasp
 
 
 class GraspGenerator:
