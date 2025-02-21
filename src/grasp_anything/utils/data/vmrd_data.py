@@ -5,7 +5,7 @@ import re
 import pickle
 import torch
 
-from utils.dataset_processing import grasp, image, mask
+from grasp_anything.utils.dataset_processing import grasp, image, mask
 from .grasp_data import GraspDatasetBase
 
 

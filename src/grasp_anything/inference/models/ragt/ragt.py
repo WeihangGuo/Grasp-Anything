@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-from inference.models.grasp_model import GraspModel, ResidualBlock
+from grasp_anything.inference.models.grasp_model import GraspModel, ResidualBlock
 from .mobile_vit import get_model
 
 

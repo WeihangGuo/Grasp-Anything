@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-from inference.models.grasp_model import GraspModel
+from grasp_anything.inference.models.grasp_model import GraspModel
 
 filter_sizes = [32, 16, 8, 8, 16, 32]
 kernel_sizes = [9, 5, 3, 3, 5, 9]

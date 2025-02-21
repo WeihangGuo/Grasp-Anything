@@ -7,7 +7,7 @@ import torch.distributed as dist
 import torch.nn as nn
 # from inplace_abn import InPlaceABN, InPlaceABNSync, ABN
 
-from models.grasp_det_seg.modules.misc import ActivatedAffine, ActivatedGroupNorm
+from grasp_anything.models.grasp_det_seg.modules.misc import ActivatedAffine, ActivatedGroupNorm
 from . import scheduler as lr_scheduler
 
 NORM_LAYERS = [nn.BatchNorm2d, nn.BatchNorm2d, nn.BatchNorm2d, nn.BatchNorm2d, nn.GroupNorm]

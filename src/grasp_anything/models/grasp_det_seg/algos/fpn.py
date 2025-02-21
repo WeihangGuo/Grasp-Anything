@@ -1,10 +1,10 @@
 import torch
 # from inplace_abn import active_group, set_active_group
 
-from models.grasp_det_seg.utils.bbx import shift_boxes
-from models.grasp_det_seg.utils.misc import Empty
-from models.grasp_det_seg.utils.parallel import PackedSequence
-from models.grasp_det_seg.utils.roi_sampling import roi_sampling
+from grasp_anything.models.grasp_det_seg.utils.bbx import shift_boxes
+from grasp_anything.models.grasp_det_seg.utils.misc import Empty
+from grasp_anything.models.grasp_det_seg.utils.parallel import PackedSequence
+from grasp_anything.models.grasp_det_seg.utils.roi_sampling import roi_sampling
 from .detection import DetectionAlgo
 from .rpn import RPNAlgo
 

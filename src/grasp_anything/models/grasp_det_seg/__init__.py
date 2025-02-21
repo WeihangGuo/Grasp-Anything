@@ -1,16 +1,16 @@
 from ._version import version as __version__
-from models.grasp_det_seg.config import load_config
+from grasp_anything.models.grasp_det_seg.config import load_config
 import torch
-import models.grasp_det_seg.models as models
-from models.grasp_det_seg.algos.detection import PredictionGenerator, ProposalMatcher, DetectionLoss
-from models.grasp_det_seg.algos.fpn import RPNAlgoFPN, DetectionAlgoFPN
-from models.grasp_det_seg.algos.rpn import AnchorMatcher, ProposalGenerator, RPNLoss
-from models.grasp_det_seg.algos.semantic_seg import SemanticSegAlgo, SemanticSegLoss
-from models.grasp_det_seg.config import load_config
-from models.grasp_det_seg.models.det_seg import DetSegNet, NETWORK_INPUTS
-from models.grasp_det_seg.modules.fpn import FPN, FPNBody
-from models.grasp_det_seg.modules.heads import RPNHead, FPNSemanticHeadDeeplab, FPNROIHead
-from models.grasp_det_seg.utils.misc import norm_act_from_config, freeze_params, NORM_LAYERS, OTHER_LAYERS
+import grasp_anything.models.grasp_det_seg.models as models
+from grasp_anything.models.grasp_det_seg.algos.detection import PredictionGenerator, ProposalMatcher, DetectionLoss
+from grasp_anything.models.grasp_det_seg.algos.fpn import RPNAlgoFPN, DetectionAlgoFPN
+from grasp_anything.models.grasp_det_seg.algos.rpn import AnchorMatcher, ProposalGenerator, RPNLoss
+from grasp_anything.models.grasp_det_seg.algos.semantic_seg import SemanticSegAlgo, SemanticSegLoss
+from grasp_anything.models.grasp_det_seg.config import load_config
+from grasp_anything.models.grasp_det_seg.models.det_seg import DetSegNet, NETWORK_INPUTS
+from grasp_anything.models.grasp_det_seg.modules.fpn import FPN, FPNBody
+from grasp_anything.models.grasp_det_seg.modules.heads import RPNHead, FPNSemanticHeadDeeplab, FPNROIHead
+from grasp_anything.models.grasp_det_seg.utils.misc import norm_act_from_config, freeze_params, NORM_LAYERS, OTHER_LAYERS
 
 
 def make_config(args):

@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as functional
 # from inplace_abn import ABN
-from models.grasp_det_seg.utils.misc import try_index
+from grasp_anything.models.grasp_det_seg.utils.misc import try_index
 
 class FPNROIHead(nn.Module):
     """ROI head module for FPN

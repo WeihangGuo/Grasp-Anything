@@ -3,8 +3,8 @@ from math import ceil
 import torch
 import torch.nn.functional as functional
 
-from models.grasp_det_seg.utils.parallel import PackedSequence
-from models.grasp_det_seg.utils.sequence import pack_padded_images
+from grasp_anything.models.grasp_det_seg.utils.parallel import PackedSequence
+from grasp_anything.models.grasp_det_seg.utils.sequence import pack_padded_images
 
 
 class SemanticSegLoss:

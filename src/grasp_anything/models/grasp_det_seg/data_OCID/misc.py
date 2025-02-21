@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-from grasp_det_seg.utils.parallel import PackedSequence
+from grasp_anything.models.grasp_det_seg.utils.parallel import PackedSequence
 
 
 def iss_collate_fn(items):

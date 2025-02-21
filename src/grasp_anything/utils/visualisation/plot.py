@@ -93,7 +93,7 @@ def plot_grasp(
     :param grasp_angle_img: Angle output of network
     :param no_grasps: Maximum number of grasps to plot
     :param grasp_width_img: (optional) Width output of network
-    :return:
+    :return: fig
     """
     if grasps is None:
         grasps = detect_grasps(grasp_q_img, grasp_angle_img, width_img=grasp_width_img, no_grasps=no_grasps)
@@ -114,7 +114,9 @@ def plot_grasp(
     if save:
         time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         fig.savefig('results/{}.png'.format(time))
-
+    plt.pause(0.1)  # Adjust the pause time for real-time updates
+    fig.canvas.draw()  # Redraw the figure
+    return fig
 
 def save_results(rgb_img, grasp_q_img, grasp_angle_img, depth_img=None, no_grasps=1, grasp_width_img=None):
     """

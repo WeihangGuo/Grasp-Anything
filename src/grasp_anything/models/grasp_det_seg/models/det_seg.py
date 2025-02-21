@@ -4,10 +4,10 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-from models.grasp_det_seg.utils.sequence import pad_packed_images
-from inference.models.grasp_model import GraspModel
-from utils.dataset_processing.grasp import Grasp
-from utils.dataset_processing.grasp import GraspRectangles
+from grasp_anything.models.grasp_det_seg.utils.sequence import pad_packed_images
+from grasp_anything.inference.models.grasp_model import GraspModel
+from grasp_anything.utils.dataset_processing.grasp import Grasp
+from grasp_anything.utils.dataset_processing.grasp import GraspRectangles
 
 def _gr_text_to_no(l, offset=(0, 0)):
     """

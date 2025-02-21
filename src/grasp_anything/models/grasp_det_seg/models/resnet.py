@@ -5,9 +5,9 @@ from functools import partial
 import torch.nn as nn
 # from inplace_abn import ABN
 
-from models.grasp_det_seg.modules.misc import GlobalAvgPool2d
-from models.grasp_det_seg.modules.residual import ResidualBlock
-from models.grasp_det_seg.utils.misc import try_index
+from grasp_anything.models.grasp_det_seg.modules.misc import GlobalAvgPool2d
+from grasp_anything.models.grasp_det_seg.modules.residual import ResidualBlock
+from grasp_anything.models.grasp_det_seg.utils.misc import try_index
 
 
 class ResNet(nn.Module):

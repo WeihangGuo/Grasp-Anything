@@ -10,10 +10,10 @@ import torch.nn as nn
 from torch import Tensor
 from torch.nn import functional as F
 
-from inference.models.ragt.transformer import TransformerEncoder
-from inference.models.ragt.model_config import get_config
+from grasp_anything.inference.models.ragt.transformer import TransformerEncoder
+from grasp_anything.inference.models.ragt.model_config import get_config
 
-from inference.models.ragt.Anchor import num_anchors
+from grasp_anything.inference.models.ragt.Anchor import num_anchors
 
 
 def make_divisible(

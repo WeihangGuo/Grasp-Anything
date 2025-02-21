@@ -9,8 +9,6 @@ $ pip install -e .
 
 ## Important Notice:
 
-All imports should be updated from relative imports to absolute imports. However, not all files have been modified yet.
-
 If you encounter a ModuleNotFoundError when using the package, please ensure that the necessary imports have been updated accordingly.
 This is the repository of the paper "Grasp-Anything: Large-scale Grasp Dataset from Foundation Models"
 

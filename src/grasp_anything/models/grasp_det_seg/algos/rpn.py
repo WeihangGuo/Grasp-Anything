@@ -4,11 +4,11 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as functional
 
-from models.grasp_det_seg.modules.losses import smooth_l1
-from models.grasp_det_seg.utils.bbx import ious, calculate_shift
-from models.grasp_det_seg.utils.misc import Empty
-from models.grasp_det_seg.utils.nms import nms
-from models.grasp_det_seg.utils.parallel import PackedSequence
+from grasp_anything.models.grasp_det_seg.modules.losses import smooth_l1
+from grasp_anything.models.grasp_det_seg.utils.bbx import ious, calculate_shift
+from grasp_anything.models.grasp_det_seg.utils.misc import Empty
+from grasp_anything.models.grasp_det_seg.utils.nms import nms
+from grasp_anything.models.grasp_det_seg.utils.parallel import PackedSequence
 
 CHUNK_SIZE = 16
 

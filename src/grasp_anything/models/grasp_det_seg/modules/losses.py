@@ -1,6 +1,6 @@
 import torch
 
-from models.grasp_det_seg.utils.parallel import PackedSequence
+from grasp_anything.models.grasp_det_seg.utils.parallel import PackedSequence
 
 
 def smooth_l1(x1, x2, sigma):
