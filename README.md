@@ -1,5 +1,8 @@
 # Grasp-Anything
-Installation as a package via pip.
+
+## Installation
+- Install [hardware](https://github.com/WeihangGuo/hardware)
+- Installation Grasp-Anything as a package via pip:
 ```bash
 $ pip install -e .
 ```
